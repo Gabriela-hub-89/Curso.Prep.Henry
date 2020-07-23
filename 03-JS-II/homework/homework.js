@@ -61,8 +61,8 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
-  if (numero === Math.round(numero)) {
-    return true 
+  if (numero === Math.round(numero)) {   // otra forma sería
+    return true                            // return numero % 1 === 0
   }
   return false
 
@@ -81,8 +81,8 @@ function fizzBuzz(numero) {
   }
   else if (numero % 5 === 0) {
     return 'buzz'
-  }
-  else return numero
+  } 
+  else return numero  
 }
 
 function esPrimo(numero) {
@@ -101,6 +101,14 @@ function esPrimo(numero) {
   }
   return true
 }
+
+// otra forma del anterior más corta
+//if(numero < 2) return false
+// for(var i = 2; i < numero; i++) {
+// if(numero % i === 0) {
+//  return false
+//} 
+// }
 
 
 // No modificar nada debajo de esta línea
